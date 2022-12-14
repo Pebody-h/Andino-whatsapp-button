@@ -1,0 +1,6 @@
+{
+    "whatsapp-button": {
+        "component": "WhatsappButton",
+        "composition": "children"
+    }
+}
