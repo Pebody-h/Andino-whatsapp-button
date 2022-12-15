@@ -12,7 +12,7 @@ type Props = {
 
 const WhatsappButton = ( {logo, phone, message, width, height}: Props) => {
     const formattedMessage = message.replace(/ /g, "%20")
-    const CSS_HANDLES = ["whatsapp_button"];
+    const CSS_HANDLES = ["whatsapp_button", "whatsapp_image"];
     const handles = useCssHandles(CSS_HANDLES)
 
     return (
@@ -25,7 +25,8 @@ const WhatsappButton = ( {logo, phone, message, width, height}: Props) => {
                 src={logo} 
                 width={width} 
                 height={height} 
-                alt="Logo-Whatsapp" 
+                alt="Logo-Whatsapp"
+                className={handles.whatsapp_image}
                 />
             </a>
         </div>
